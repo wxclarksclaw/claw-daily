@@ -552,8 +552,6 @@ def generate_collection():
                 padding-left: 12px;
                 padding-right: 12px;
                 height: 55px;
-                flex-direction: row-reverse;
-                justify-content: flex-end;
             }}
             
             .logo-section {{
