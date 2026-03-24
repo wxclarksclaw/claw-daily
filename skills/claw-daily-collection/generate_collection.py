@@ -176,10 +176,6 @@ def generate_collection():
         html_content = extract_body_content(article['full_path'])
         content_items.append(
             f'<div id="article-{i}" class="article-wrapper" style="display:none;">'
-            f'<div class="article-header">'
-            f'<h2>{article["display_name"]}</h2>'
-            f'<div class="article-date">{date_display}</div>'
-            f'</div>'
             f'<div class="article-content">{html_content}</div>'
             f'</div>'
         )
@@ -496,23 +492,6 @@ def generate_collection():
             display: block;
         }}
         
-        .article-header {{
-            padding: 20px;
-            border-bottom: 1px solid var(--border);
-            background: var(--card);
-        }}
-        
-        .article-header h2 {{
-            font-size: 20px;
-            color: var(--gold);
-            margin-bottom: 8px;
-        }}
-        
-        .article-date {{
-            font-size: 13px;
-            color: var(--muted);
-        }}
-        
         .article-content {{
             padding: 0;
         }}
@@ -612,14 +591,6 @@ def generate_collection():
             
             .welcome .tagline {{
                 font-size: 12px !important;
-            }}
-            
-            .article-header {{
-                padding: 15px;
-            }}
-            
-            .article-header h2 {{
-                font-size: 18px;
             }}
             
             .article-content .container {{
